@@ -1,3 +1,5 @@
-/Sln2CcrParser/obj
-*.xml
 *.pdb
+*.xml
+*.suo
+*.csproj.user
+/Sln2CcrConverter/obj/

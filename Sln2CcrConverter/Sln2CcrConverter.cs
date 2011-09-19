@@ -9,7 +9,7 @@ using System.Windows.Forms;
 namespace Sln2CcrParser
 {
     [ChameleonCoder.CCPlugin]
-    public class Sln2CcrParserService : IService
+    public class Sln2CcrConverter : IService
     {
         public string About
         {

@@ -58,8 +58,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ChameleonCoder">
-      <HintPath>..\..\ChameleonCoder\Deploy\ChameleonCoder.exe</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\Deploy\ChameleonCoder.exe</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -74,7 +73,7 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sln2CcrParserService.cs" />
+    <Compile Include="Sln2CcrConverter.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -135,7 +134,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "C:\Programming\C#\Sln2CcrParser\Deploy\Sln2CcrParser.dll" "C:\Programming\C#\ChameleonCoder\Deploy\Components\Sln2CcrParser.dll"</PostBuildEvent>
+    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir)\..\Deploy\Components\$(TargetFileName)"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
