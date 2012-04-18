@@ -61,6 +61,9 @@
       <HintPath>..\..\Deploy\ChameleonCoder.exe</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="ChameleonCoder.Core">
+      <HintPath>..\..\Deploy\ChameleonCoder.Core.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Windows.Forms" />
