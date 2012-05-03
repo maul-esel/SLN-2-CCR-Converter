@@ -54,7 +54,7 @@ namespace Sln2CcrParser
             get { return "0.0.0.1"; }
         }
 
-        public void Initialize(ChameleonCoder.ChameleonCoderApp app)
+        public void Initialize(ChameleonCoder.IChameleonCoderApp app)
         {
             App = app;
         }
@@ -64,7 +64,7 @@ namespace Sln2CcrParser
             App = null;
         }
 
-        public ChameleonCoder.ChameleonCoderApp App
+        public ChameleonCoder.IChameleonCoderApp App
         {
             get;
             private set;

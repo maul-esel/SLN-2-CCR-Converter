@@ -57,12 +57,14 @@
     <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ChameleonCoder">
-      <HintPath>..\..\Deploy\ChameleonCoder.exe</HintPath>
-      <Private>False</Private>
+    <Reference Include="ChameleonCoder.Abstract">
+      <HintPath>..\..\Deploy\ChameleonCoder.Abstract.dll</HintPath>
     </Reference>
     <Reference Include="ChameleonCoder.Core">
       <HintPath>..\..\Deploy\ChameleonCoder.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ChameleonCoder.Shared">
+      <HintPath>..\..\Deploy\ChameleonCoder.Shared.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
